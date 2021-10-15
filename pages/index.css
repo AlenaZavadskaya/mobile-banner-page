@@ -1,28 +1,9 @@
 @import "../vendor/normalize.css";
-@import "../vendor/fonts/index.css";
+@import "../vendor/fonts/fonts.css";
+@import "../blocks/page/page.css";
 @import "../blocks/header/header.css";
 @import "../blocks/content/content.css";
 @import "../blocks/title/title.css";
 @import "../blocks/button/button.css";
 @import "../blocks/footer/footer.css";
 @import "../blocks/transition/transition.css";
-
-.page {
-  margin: 0;
-  /* background-image: url("../images/4.png"); */
-  background: -webkit-image-set(
-      url("../images/4.png") 1x,
-      url("../images/4@2x.png") 2x,
-      url("../images/4@3x.png") 3x
-    )
-    no-repeat;
-  background-size: cover;
-	font-family: SFProText;
-  color: #fff;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  text-rendering: optimizeLegibility;
-}
