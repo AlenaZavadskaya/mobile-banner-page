@@ -24,30 +24,34 @@
       <ul class="content">
         <li class="content__list">
           <div class="content__list-icon content__list-icon_unlimited"></div>
-          <p class="content__list-text">Unlimited documents</p>
+          <p id="unlim" class="content__list-text">Unlimited documents</p>
         </li>
         <li class="content__list">
           <div class="content__list-icon content__list-icon_export"></div>
-          <p class="content__list-text">Export to clouds</p>
+          <p id="export" class="content__list-text">Export to clouds</p>
         </li>
         <li class="content__list">
           <div class="content__list-icon content__list-icon_recognition"></div>
-          <p class="content__list-text">Text recognition (OCR)</p>
+          <p id="rec" class="content__list-text">Text recognition (OCR)</p>
         </li>
       </ul>
       <section class="subscription">
         <div class="subscription__monthly">
-          <h3 class="subscription__title">Monthly</h3>
-          <p class="subscription__price"><span class="subscription__price_span">$9.99 </span>per month</p>
-          <p class="subscription__free">3 DAYS FREE!</p>
-          <p class="subscription__per-month">$9.99 month</p>
+          <h3 id="monthly" class="subscription__title">Monthly</h3>
+          <p id="priceM" class="subscription__price">
+            <span class="subscription__price_span">$9.99 </span>per month
+          </p>
+          <p id="subM" class="subscription__free">3 DAYS FREE!</p>
+          <p id="m-per-m" class="subscription__per-month">$9.99 month</p>
         </div>
         <div class="subscription__annually subscription_inactive">
           <p class="subscription__discount">-83%</p>
-          <h3 class="subscription__title">Annually</h3>
-          <p class="subscription__price"><span class="subscription__price_span">$19.99 </span>per year</p>
-          <p class="subscription__free">most popular</p>
-          <p class="subscription__per-month">$1.66 month</p>
+          <h3 id="annually" class="subscription__title">Annually</h3>
+          <p id="priceY" class="subscription__price">
+            <span class="subscription__price_span">$19.99 </span>per year
+          </p>
+          <p id="subY" class="subscription__free">most popular</p>
+          <p id="y-per-m" class="subscription__per-month">$1.66 month</p>
         </div>
       </section>
       <button class="button transition">Continue</button>
@@ -57,14 +61,15 @@
       <nav class="footer__nav">
         <ul class="footer__links">
           <li>
-            <a class="footer__link transition" href="#">Terms of Use</a>
+            <a id="term" class="footer__link transition" href="#">Terms of Use</a>
           </li>
           <li>
-            <a class="footer__link transition" href="#">Privacy Policy</a>
+            <a id="privacy" class="footer__link transition" href="#">Privacy Policy</a>
           </li>
         </ul>
       </nav>
     </footer>
-		<div class="home"></div>
+    <div class="home"></div>
+    <script type="text/javascript" src="/index.js"></script>
   </body>
 </html>
