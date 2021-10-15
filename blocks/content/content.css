@@ -1,0 +1,9 @@
+@import "../content/__list/content__list.css";
+@import "../content/__list-icon/content__list-icon.css";
+@import "../content/__list-text/content__list-text.css";
+
+.content {
+  margin: 0 20.79% 11.73% 23.59%;
+  padding: 0;
+  list-style: none;
+}

@@ -1,0 +1,12 @@
+@import "../footer/__info/footer__info.css";
+@import "../footer/__links/footer__links.css";
+@import "../footer/__link/footer__link.css";
+
+.footer {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  /* identical to box height, or 118% */
+}
