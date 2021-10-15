@@ -4,6 +4,8 @@
 @import "../blocks/header/header.css";
 @import "../blocks/content/content.css";
 @import "../blocks/title/title.css";
+@import "../blocks/subscription/subscription.css";
 @import "../blocks/button/button.css";
 @import "../blocks/footer/footer.css";
+@import "../blocks/home/home.css";
 @import "../blocks/transition/transition.css";

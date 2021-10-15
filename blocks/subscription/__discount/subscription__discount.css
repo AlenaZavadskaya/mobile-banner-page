@@ -1,0 +1,17 @@
+.subscription__discount {
+  position: absolute;
+  top: 1%;
+  left: 78%;
+  width: 22%;
+  height: 19%;
+  border-radius: 50%;
+  background: #db0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: SFProDisplay;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+}

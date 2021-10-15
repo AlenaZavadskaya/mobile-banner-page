@@ -1,0 +1,14 @@
+@import "./__annually/subscription__annually.css";
+@import "./__monthly/subscription__monthly.css";
+@import "./__discount/subscription__discount.css";
+@import "./__title/subscription__title.css";
+@import "./__price/subscription__price.css";
+@import "./__free/subscription__free.css";
+@import "./__per-month/subscription__per-month.css";
+@import "./_inactive/subscription_inactive.css";
+
+.subscription {
+  display: flex;
+  align-items: center;
+  margin: 0 9.598% 4.9% 10.197%;
+}

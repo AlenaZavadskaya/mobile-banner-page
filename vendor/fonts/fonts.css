@@ -14,3 +14,11 @@
   font-display: swap;
   src: url("SFProText-Regular.ttf") format("ttf");
 }
+
+@font-face {
+  font-family: SFProDisplay;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("SFProDisplay-Regular.ttf") format("ttf");
+}

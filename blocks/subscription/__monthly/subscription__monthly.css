@@ -1,0 +1,10 @@
+.subscription__monthly {
+  background: url("../../../images/shape-1.svg") no-repeat;
+  width: 50%;
+  height: 178px;
+	/* width: 40vw;
+	height: 22vh; */
+  background-size: contain;
+  margin-right: 3.3%;
+  text-align: center;
+}

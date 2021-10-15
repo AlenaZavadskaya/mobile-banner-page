@@ -1,0 +1,8 @@
+.subscription__annually {
+  background: url("../../../images/shape-2.svg") no-repeat;
+  width: 44%;
+  height: 162px;
+  background-size: contain;
+  position: relative;
+  text-align: center;
+}

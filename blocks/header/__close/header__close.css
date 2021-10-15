@@ -1,0 +1,6 @@
+.header__close {
+  background: url("../../../images/close.svg") no-repeat center;
+	width: 6.4vw;
+	height: 6.4vw;
+  color: rgba(255, 255, 255, 0.4);
+}

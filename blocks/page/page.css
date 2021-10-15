@@ -1,6 +1,6 @@
 .page {
   margin: 0;
-  /* background-image: url("../images/4.png"); */
+  background: url("../../images/4.png") no-repeat;
   background: -webkit-image-set(
       url("../../images/4.png") 1x,
       url("../../images/4@2x.png") 2x,

@@ -1,14 +1,15 @@
 @import "../header/__links/header__links.css";
-@import "../header/__link/header__link.css";
+@import "../header/__close/header__close.css";
+@import "../header/__restore/header__restore.css";
 
 .header {
   /* height: 150%;
   margin: 125% 250% 125% 956%; */
-  margin: 10.67% 5.333% 40.78% 5.333%;
+  margin: 11% 5.333% 40.78%;
   display: flex;
   justify-content: space-between;
-  font-size: 81%;
-  line-height: 190%;
+  /* font-size: 81%;
+  line-height: 190%; */
   /* or 315% */
-  letter-spacing: -0.216667px;
+  /* letter-spacing: -0.216667px; */
 }

@@ -1,4 +1,6 @@
 .footer__info {
   margin: 0 0 4.265%;
   text-align: center;
+  mix-blend-mode: normal;
+  opacity: 0.5;
 }

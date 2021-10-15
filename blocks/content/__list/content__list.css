@@ -1,9 +1,10 @@
 .content__list {
-  margin-bottom: 3.2%;
   display: flex;
-  font-size: 17px;
-  line-height: 30px;
+  /* font-size: 17px;
+  line-height: 30px; */
   /* or 179% */
+  font-size: 5.13vw;
+  line-height: 166%;
   letter-spacing: -0.321111px;
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.684495);
 }
