@@ -2,12 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> -->
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
+    <!-- <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0"
+    /> -->
     <!-- <meta content='width' name='MobileOptimized'/> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -39,7 +41,7 @@
         <div class="subscription__monthly">
           <h3 id="monthly" class="subscription__title">Monthly</h3>
           <p id="priceM" class="subscription__price">
-            <span class="subscription__price_span">$9.99 </span>per month
+            <span id="m-span" class="subscription__price_span">$9.99 </span>per month
           </p>
           <p id="subM" class="subscription__free">3 DAYS FREE!</p>
           <p id="m-per-m" class="subscription__per-month">$9.99 month</p>
@@ -48,7 +50,8 @@
           <p class="subscription__discount">-83%</p>
           <h3 id="annually" class="subscription__title">Annually</h3>
           <p id="priceY" class="subscription__price">
-            <span class="subscription__price_span">$19.99 </span>per year
+            <span id="y-span" class="subscription__price_span">$19.99 </span>per
+            year
           </p>
           <p id="subY" class="subscription__free">most popular</p>
           <p id="y-per-m" class="subscription__per-month">$1.66 month</p>
@@ -61,15 +64,21 @@
       <nav class="footer__nav">
         <ul class="footer__links">
           <li>
-            <a id="term" class="footer__link transition" href="#">Terms of Use</a>
+            <a id="term" class="footer__link transition" href="#"
+              >Terms of Use</a
+            >
           </li>
           <li>
-            <a id="privacy" class="footer__link transition" href="#">Privacy Policy</a>
+            <a id="privacy" class="footer__link transition" href="#"
+              >Privacy Policy</a
+            >
           </li>
         </ul>
       </nav>
     </footer>
     <div class="home"></div>
-    <script type="text/javascript" src="/index.js"></script>
+    <script type="text/javascript" src="/scripts/constants.js"></script>
+		<script type="text/javascript" src="/scripts/getData.js"></script>
+    <script type="text/javascript" src="/scripts/index.js"></script>
   </body>
 </html>

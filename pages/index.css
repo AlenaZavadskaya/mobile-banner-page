@@ -2,6 +2,7 @@
 @import "../vendor/fonts/fonts.css";
 @import "../blocks/page/page.css";
 @import "../blocks/header/header.css";
+@import "../blocks/main/main.css";
 @import "../blocks/content/content.css";
 @import "../blocks/title/title.css";
 @import "../blocks/subscription/subscription.css";

@@ -3,13 +3,9 @@
 @import "../header/__restore/header__restore.css";
 
 .header {
-  /* height: 150%;
-  margin: 125% 250% 125% 956%; */
-  margin: 11% 5.333% 40.78%;
+  margin: 11% auto 40.78%;
+  max-width: 89vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  /* font-size: 81%;
-  line-height: 190%; */
-  /* or 315% */
-  /* letter-spacing: -0.216667px; */
 }
