@@ -1,10 +1,9 @@
 .button {
-  width: 74.66%;
-  height: 54px;
-  margin: 0 auto 4.265%;
-  font-size: 17px;
-  line-height: 17px;
-  /* identical to box height, or 100% */
+  width: 74.5vw;
+  height: 6.7vh;
+  margin: 0 auto 2vh;
+  font-size: 5vw;
+  line-height: 7vh;
   color: #ffffff;
   text-align: center;
   background: linear-gradient(270deg, #1987ff 0%, #19ccff 100%);

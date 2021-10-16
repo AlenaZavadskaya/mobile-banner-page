@@ -1,11 +1,9 @@
 .subscription__free {
-  width: 101%;
-  min-width: 151px;
-  min-height: 22px;
-	margin: 0 0 0 -2%;
+  width: 40.91vw;
+  margin: 0 0 0 -2.5%;
   font-family: SFProDisplay;
-  font-size: 15.4px;
-  line-height: 20px;
+  font-size: 4vw;
+  line-height: 2.75vh;
   text-transform: uppercase;
   background: #495795;
 }

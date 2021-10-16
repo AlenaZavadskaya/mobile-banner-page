@@ -1,0 +1,17 @@
+.subscription__discount_inactive {
+  position: absolute;
+  top: 0.4vw;
+  left: 26.9vw;
+  width: 8.4vw;
+  height: 3.8vh;
+  border-radius: 50%;
+  background: #db0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: SFProDisplay;
+  font-size: 3vw;
+  line-height: 2vh;
+  color: #ffffff;
+}

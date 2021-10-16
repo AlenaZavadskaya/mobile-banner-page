@@ -6,9 +6,14 @@
 @import "./__free/subscription__free.css";
 @import "./__per-month/subscription__per-month.css";
 @import "./_inactive/subscription_inactive.css";
+@import "./__discount/_inactive/subscription__discount_inactive.css";
+@import "./__title/_inactive/subscription__title_inactive.css";
+@import "./__price/_inactive/subscription__price_inactive.css";
+@import "./__free/_inactive/subscription__free_inactive.css";
+@import "./__per-month/_inactive/subscription__per-month_inactive.css";
 
 .subscription {
   display: flex;
   align-items: center;
-  margin: 0 auto 4.9%;
+  margin: 0 auto 2vh;
 }

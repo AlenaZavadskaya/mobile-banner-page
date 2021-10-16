@@ -43,8 +43,8 @@ function getAndFillData(obj) {
     "<strong>{{price}}</strong><br>",
     " "
   );
-  annuallyPrice.innerHTML = `<p id="priceY" class="subscription__price">
-      <span id="y-span" class="subscription__price_span">
+  annuallyPrice.innerHTML = `<p id="priceY" class="subscription__price subscription__price_inative">
+      <span id="y-span" class="subscription__price_span subscription__price_span_inactive">
         $${pricePerYear}
       </span><br>
       ${textY}

@@ -1,10 +1,19 @@
 .subscription__monthly {
-  background: url("../../../images/shape-1.svg") no-repeat;
-  width: 50%;
-  height: 178px;
-	/* width: 40vw;
-	height: 22vh; */
+  /* background: url("../../../images/shape-1.svg") no-repeat; */
+  background: linear-gradient(
+    0deg,
+    rgba(73, 87, 149, 0.197154),
+    rgba(73, 87, 149, 0.197154)
+  );
+  border: 1px solid #495795;
+  border-radius: 20.9px;
+  /* width: 40.9vw;
+  height: 22vh;
   background-size: contain;
-  margin-right: 3.3%;
+  margin-right: 2.6%; */
+  width: 38.5vw;
+  height: 22vh;
+  /* background-size: contain; */
+  margin-right: 3.6%;
   text-align: center;
 }

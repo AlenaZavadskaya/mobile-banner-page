@@ -1,13 +1,13 @@
 .subscription__price {
   font-family: SFProDisplay;
-  font-size: 15px;
-  line-height: 15px;
-  /* or 62% */
-  max-width: 68px;
-  margin: 0 auto 10%;
+  font-size: 4.24vw;
+  line-height: 1.8vh;
+  margin: 0 auto 1.8vh;
 }
 
 .subscription__price_span {
-  font-size: 24px;
-  line-height: 15px;
+  font-size: 7vw;
+}
+
+.subscription__price_span-inactive {
 }

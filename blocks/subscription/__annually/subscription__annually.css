@@ -1,7 +1,16 @@
 .subscription__annually {
-  background: url("../../../images/shape-2.svg") no-repeat;
-  width: 44%;
-  height: 162px;
+  /* background: url("../../../images/shape-2.svg") no-repeat; */
+  background: linear-gradient(
+    0deg,
+    rgba(73, 87, 149, 0.1),
+    rgba(73, 87, 149, 0.1)
+  );
+  border: 1px solid #495795;
+  border-radius: 18.9981px;
+  /* width: 38.5vw;
+  height: 20vh; */
+  width: 35.5vw;
+  height: 20vh;
   background-size: contain;
   position: relative;
   text-align: center;

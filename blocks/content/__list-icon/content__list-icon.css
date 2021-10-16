@@ -3,8 +3,6 @@
 @import "../__list-icon/_recognition/content__list-icon_recognition.css";
 
 .content__list-icon {
-  /* max-width: 26px; */
-  /* width: 100%; */
-	width: 26px;
+  width: 7.9vw;
   margin-right: 6px;
 }
