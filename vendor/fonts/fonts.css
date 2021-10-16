@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("Roboto-Regular.ttf") format("ttf"),
+  src: url("Roboto-Regular.ttf") format("truetype"),
     url("roboto-v29-latin-regular.svg#Roboto") format("svg");
 }
 
@@ -12,13 +12,15 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("SFProText-Regular.ttf") format("ttf");
+  src: url("SF-Pro-Text-Regular.otf") format("opentype"),
+	url("SFProText-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: SFProDisplay;
+  font-family: "SFProDisplay";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("SFProDisplay-Regular.ttf") format("ttf");
+  src: url("SF-Pro-Display-Regular.otf") format("opentype"),
+	url("SFProDisplay-Regular.ttf") format("truetype");
 }
