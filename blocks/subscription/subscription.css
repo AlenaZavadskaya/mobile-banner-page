@@ -13,6 +13,8 @@
 @import "./__price/_inactive/subscription__price_inactive.css";
 @import "./__free/_inactive/subscription__free_inactive.css";
 @import "./__per-month/_inactive/subscription__per-month_inactive.css";
+@import "./__price/_span/subscription__price_span.css";
+@import "./__price/_span/_inactive/subscription__price_span_inactive.css";
 
 .subscription {
   display: flex;

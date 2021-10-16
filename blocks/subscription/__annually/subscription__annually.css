@@ -1,3 +1,5 @@
 .subscription__annually {
   position: relative;
+  background: url("../../../images/shape.svg") no-repeat;
+  background-size: contain;
 }

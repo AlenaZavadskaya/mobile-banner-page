@@ -1,11 +1,5 @@
 .subscription_inactive {
+  width: 18vh;
+  height: 20vh;
   opacity: 0.49;
-  width: 35.5vw;
-  height: 19.6vh;
-  background: linear-gradient(
-    0deg,
-    rgba(73, 87, 149, 0.1),
-    rgba(73, 87, 149, 0.1)
-  );
-  border-radius: 18.9981px;
 }

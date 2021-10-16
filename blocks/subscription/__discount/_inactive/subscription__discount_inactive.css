@@ -1,9 +1,9 @@
 .subscription__discount_inactive {
   position: absolute;
-  top: 0.4vw;
-  left: 26.9vw;
-  width: 8.4vw;
-  height: 3.8vh;
+  top: 0%;
+  left: 73.6%;
+  width: 3.7vh;
+  height: 3.6vh;
   border-radius: 50%;
   background: #db0000;
   display: flex;
@@ -11,7 +11,7 @@
   align-items: center;
   margin: 0;
   font-family: SFProDisplay;
-  font-size: 3vw;
-  line-height: 2vh;
+  font-size: 1.35vh;
+  line-height: 1.8vh;
   color: #ffffff;
 }
