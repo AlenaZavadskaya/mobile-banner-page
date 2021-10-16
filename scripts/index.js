@@ -21,7 +21,7 @@ function getAndFillData(obj) {
     " "
   );
 
-  montlyPrice.innerHTML = `<p id="priceM" class="subscription__price">
+  monthlyPrice.innerHTML = `<p id="priceM" class="subscription__price">
       <span id="m-span" class="subscription__price_span">
         $${pricePerMonth}
       </span><br>
@@ -43,7 +43,7 @@ function getAndFillData(obj) {
     "<strong>{{price}}</strong><br>",
     " "
   );
-  annuallyPrice.innerHTML = `<p id="priceY" class="subscription__price subscription__price_inative">
+  annuallyPrice.innerHTML = `<p id="priceY" class="subscription__price subscription__price_inactive">
       <span id="y-span" class="subscription__price_span subscription__price_span_inactive">
         $${pricePerYear}
       </span><br>
@@ -60,3 +60,41 @@ function getAndFillData(obj) {
   term.textContent = obj["Terms of Use"];
   privacy.textContent = obj["Privacy Policy"];
 }
+
+function toggleSubscriptionYear() {
+  annuallyMarkup.classList.remove("subscription_inactive");
+  annuallyMarkup.classList.add("subscription_active");
+  monthlyMarup.classList.add("subscription_inactive");
+  discount.classList.remove("subscription__discount_inactive");
+  annually.classList.remove("subscription__title_inactive");
+  annuallyPrice.classList.remove("subscription__price_inactive");
+  subscrYear.classList.remove("subscription__free_inactive");
+  yearPerMonth.classList.remove("subscription__per-month_inactive");
+
+  monthly.classList.add("subscription__title_inactive");
+  monthlyPrice.classList.add("subscription__price_inactive");
+  subscrMonth.classList.add("subscription__free_inactive");
+  monthPerMonth.classList.add("subscription__per-month_inactive");
+
+  linkAdress.setAttribute("href", "https://google.com/");
+}
+
+function toggleSubscriptionMonth() {
+  annuallyMarkup.classList.add("subscription_inactive");
+  monthlyMarup.classList.remove("subscription_inactive");
+  monthlyMarup.classList.add("subscription_active");
+  monthly.classList.remove("subscription__title_inactive");
+  monthlyPrice.classList.remove("subscription__price_inactive");
+  subscrMonth.classList.remove("subscription__free_inactive");
+  monthPerMonth.classList.remove("subscription__per-month_inactive");
+
+  discount.classList.add("subscription__discount_inactive");
+  annually.classList.add("subscription__title_inactive");
+  annuallyPrice.classList.add("subscription__price_inactive");
+  subscrYear.classList.add("subscription__free_inactive");
+  yearPerMonth.classList.add("subscription__per-month_inactive");
+  linkAdress.setAttribute("href", "https://apple.com/");
+}
+
+annuallyMarkup.addEventListener("touchstart", toggleSubscriptionYear);
+monthlyMarup.addEventListener("touchstart", toggleSubscriptionMonth);

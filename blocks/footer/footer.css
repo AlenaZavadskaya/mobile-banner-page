@@ -3,10 +3,10 @@
 @import "../footer/__link/footer__link.css";
 
 .footer {
-  margin-bottom: 3.26vh;
+  margin-bottom: 3.23vh;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
-	font-size: 2.8vw;
-	line-height: 1.6vh;
+  font-size: 1.24vh;
+  line-height: 1.6vh;
 }

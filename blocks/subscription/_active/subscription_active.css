@@ -1,0 +1,10 @@
+.subscription_active {
+  background: linear-gradient(
+    0deg,
+    rgba(73, 87, 149, 0.197154),
+    rgba(73, 87, 149, 0.197154)
+  );
+  border-radius: 20.9px;
+  width: 38.5vw;
+  height: 21.8vh;
+}
