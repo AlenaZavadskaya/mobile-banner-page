@@ -105,27 +105,16 @@
     <script type="text/javascript" src="/scripts/constants.js"></script>
     <script type="text/javascript" src="/scripts/getData.js"></script>
     <script type="text/javascript" src="/scripts/index.js"></script>
-		<script>
-			(function(w) {
-					"use strict";
-					var d = w.document;
-					var t = d.getElementById("target");
+    <script>
+      (function (w) {
+        "use strict";
+        var d = w.document;
+        var t = d.getElementById("target");
 
-					t.addEventListener("click", function() {
-							d.documentElement.webkitRequestFullscreen();
-							// Compare alternative to preceding line, calling
-							// method on target element instead:
-							// t.webkitRequestFullscreen();
-							// And compare changing target's style on change:
-							// t.style.width = "100%";
-							// t.style.height = "100%";
-					});
-
-					// alerts "undefined" in iOS 12.1 Safari on iPad and iPhone
-					alert(d.fullscreenEnabled);
-					// alerts "true" in iOS 12.1 Safari on iPad, "undefined" on iPhone
-					alert(d.webkitFullscreenEnabled);
-			}(window));
-	</script>
+        t.addEventListener("click", function () {
+          d.documentElement.webkitEnterFullScreen();
+        });
+      })(window);
+    </script>
   </body>
 </html>
