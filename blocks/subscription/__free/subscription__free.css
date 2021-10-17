@@ -6,4 +6,5 @@
   line-height: 2.75vh;
   text-transform: uppercase;
   background: #495795;
+  white-space: nowrap;
 }
