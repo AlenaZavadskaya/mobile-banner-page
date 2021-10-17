@@ -1,10 +1,10 @@
-const yearPricePerMonth = getPricePerMonth(pricePerYear);
-
 function getPricePerMonth(price) {
   let num = (price / 12).toString();
   num = num.slice(0, num.indexOf(".") + 3);
   return Number(num);
 }
+
+const yearPricePerMonth = getPricePerMonth(pricePerYear);
 
 function getAndFillData(obj) {
   restoreLink.textContent = obj["Restore"];

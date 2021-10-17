@@ -1,4 +1,8 @@
-function getLocalization(code = "en") {
+function getPageLanguage(lang) {
+  return localizations.includes(lang) ? lang : "en";
+}
+
+function getLocalization(code) {
   return fetch(`/localizations/${code}.json`).then((res) => {
     if (res.ok) {
       return res.json();
@@ -7,7 +11,7 @@ function getLocalization(code = "en") {
   });
 }
 
-let data = getLocalization(userLang);
+let data = getLocalization(getPageLanguage(userLang));
 data
   .then((res) => getAndFillData(res))
   .catch((err) => {
