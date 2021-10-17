@@ -113,7 +113,3 @@ function toggleSubscriptionMonth() {
 
 annuallyMarkup.addEventListener("touchstart", toggleSubscriptionYear);
 monthlyMarup.addEventListener("touchstart", toggleSubscriptionMonth);
-
-if (elem.webkitEnterFullScreen) {
-  elem.webkitEnterFullScreen();
-}
