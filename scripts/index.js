@@ -107,7 +107,7 @@ function toggleSubscriptionMonth() {
         element.style.fontSize = "2vh";
       }
     );
-    subscrMonth.style.fontSize = "3.5vw";
+    subscrMonth.style.fontSize = "3.4vw";
   }
 })(window, document);
 
