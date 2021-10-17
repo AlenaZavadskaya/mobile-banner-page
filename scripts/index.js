@@ -96,5 +96,20 @@ function toggleSubscriptionMonth() {
   linkAdress.setAttribute("href", "https://apple.com/");
 }
 
+(function reduceFont() {
+  if (userLang === "nl") {
+    pageTitle.style.maxWidth = "88%";
+  } else if (userLang === "ru" || userLang === "fr") {
+    pageTitle.style.fontSize = "3.7vh";
+    pageTitle.style.maxWidth = "88%";
+    Array.from(document.querySelectorAll(".content__list-text ")).forEach(
+      (element) => {
+        element.style.fontSize = "2vh";
+      }
+    );
+    subscrMonth.style.fontSize = "3.5vw";
+  }
+})(window, document);
+
 annuallyMarkup.addEventListener("touchstart", toggleSubscriptionYear);
 monthlyMarup.addEventListener("touchstart", toggleSubscriptionMonth);

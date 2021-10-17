@@ -19,6 +19,7 @@ const privacy = document.querySelector("#privacy");
 const annuallyMarkup = document.querySelector(".subscription__annually");
 const monthlyMarup = document.querySelector(".subscription__monthly");
 const linkAdress = document.querySelector("#link");
+const content = document.querySelectorAll(".content__list-text ");
 
 const pricePerMonth = 9.99;
 const pricePerYear = 19.99;
