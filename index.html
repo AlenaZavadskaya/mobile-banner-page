@@ -17,84 +17,163 @@
   <body class="page">
     <header class="header transition">
       <a class="header__links header__close" href="#"></a>
-      <a class="header__links header__restore" href="#">Restore</a>
+      <a
+        class="header__links header__restore"
+        href="#"
+        data-string="Restore"
+      ></a>
     </header>
     <main class="main">
-      <h1 class="title">Unlimited Access to All Features</h1>
+      <h1 class="title" data-string="Unlimited Access<br>to All Features">
+        Unlimited Access to All Features
+      </h1>
       <ul class="content">
         <li class="content__list">
           <div class="content__list-icon content__list-icon_unlimited"></div>
-          <p id="unlim" class="content__list-text">Unlimited documents</p>
+          <p class="content__list-text" data-string="Unlimited documents">
+            Unlimited documents
+          </p>
         </li>
         <li class="content__list">
           <div class="content__list-icon content__list-icon_export"></div>
-          <p id="export" class="content__list-text">Export to clouds</p>
+          <p id="export" class="content__list-text" data-string="Count mode">
+            Export to clouds
+          </p>
         </li>
         <li class="content__list">
           <div class="content__list-icon content__list-icon_recognition"></div>
-          <p id="rec" class="content__list-text">Text recognition (OCR)</p>
+          <p class="content__list-text" data-string="Text recognition (OCR)">
+            Text recognition (OCR)
+          </p>
         </li>
       </ul>
       <section class="subscription">
         <div
-          class="subscription__box subscription__monthly subscription_active"
+          id="subscription__box"
+          class="subscription__box subscription__monthly"
+          data-toggle=""
         >
-          <h3 id="monthly" class="subscription__title">Monthly</h3>
-          <p id="priceM" class="subscription__price">
-            <span id="m-span" class="subscription__price_span">$9.99 </span>per
-            month
+          <h3
+            id="subscription__title"
+            class="subscription__title"
+            data-string="Monthly"
+            data-toggle=""
+          >
+            Monthly
+          </h3>
+          <p
+            id="subscription__price"
+            class="subscription__price"
+            data-string="<strong>{{price}}</strong><br>per month"
+            data-toggle=""
+            monthPrice
+          >
+            <span
+              id="subscription__price_span"
+              class="subscription__price_span"
+              data-toggle=""
+              >$9.99 </span
+            >per month
           </p>
-          <p id="subM" class="subscription__free">3 DAYS FREE!</p>
-          <p id="m-per-m" class="subscription__per-month">$9.99 month</p>
+          <p
+            id="subscription__free"
+            class="subscription__free"
+            data-string="3 DAYS FREE"
+            data-toggle=""
+          >
+            3 DAYS FREE!
+          </p>
+          <p
+            id="subscription__per-month"
+            class="subscription__per-month"
+            data-string="{{price}}/month"
+            data-toggle=""
+            pricePerMonth
+          >
+            $9.99 month
+          </p>
         </div>
         <div
-          class="subscription__box subscription__annually subscription_inactive"
+          id="subscription__box"
+          class="
+            subscription__box subscription__annually subscription__box_inactive
+          "
+          data-toggle=""
         >
-          <p class="subscription__discount subscription__discount_inactive">
+          <p
+            id="subscription__discount"
+            class="subscription__discount subscription__discount_inactive"
+            data-toggle=""
+            data-string="-83%"
+          >
             -83%
           </p>
           <h3
-            id="annually"
+            id="subscription__title"
             class="subscription__title subscription__title_inactive"
+            data-toggle=""
+            data-string="Annually"
           >
             Annually
           </h3>
           <p
-            id="priceY"
+            id="subscription__price"
             class="subscription__price subscription__price_inactive"
+            data-toggle=""
+            data-string="<strong>{{price}}</strong><br>per year"
           >
             <span
-              id="y-span"
-              class="subscription__price_span subscription__price_span-inactive"
+              id="subscription__price_span"
+              class="subscription__price_span subscription__price_span_inactive"
+              data-toggle=""
               >$19.99 </span
             >per year
           </p>
-          <p id="subY" class="subscription__free subscription__free_inactive">
+          <p
+            id="subscription__free"
+            class="subscription__free subscription__free_inactive"
+            data-toggle=""
+            data-string="MOST POPULAR"
+          >
             most popular
           </p>
           <p
-            id="y-per-m"
+            id="subscription__per-month"
             class="subscription__per-month subscription__per-month_inactive"
+            data-toggle=""
+            data-string="{{price}}/month"
           >
             $1.66 month
           </p>
         </div>
       </section>
       <a id="link" class="button transition" href="https://apple.com/"
-        ><button>Continue</button></a
+        ><button class="button__link" data-string="Continue">
+          Continue
+        </button></a
       >
     </main>
     <footer class="footer">
-      <p class="footer__info">Auto-rewable. Cancel anytime</p>
+      <p class="footer__info" data-string="Auto-renewable. Cancel anytime.">
+        Auto-rewable. Cancel anytime
+      </p>
       <nav class="footer__nav">
         <ul class="footer__links">
           <li>
-            <a id="term" class="footer__link transition" href="#"
+            <a
+              id="term"
+              class="footer__link transition"
+              href="#"
+              data-string="Terms of Use"
               >Terms of Use</a
             >
           </li>
           <li>
-            <a id="privacy" class="footer__link transition" href="#"
+            <a
+              id="privacy"
+              class="footer__link transition"
+              href="#"
+              data-string="Privacy Policy"
               >Privacy Policy</a
             >
           </li>

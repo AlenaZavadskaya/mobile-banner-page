@@ -4,96 +4,34 @@ function getPricePerMonth(price) {
   return Number(num);
 }
 
-const yearPricePerMonth = getPricePerMonth(pricePerYear);
-
-function getAndFillData(obj) {
-  restoreLink.textContent = obj["Restore"];
-  pageTitle.textContent = obj["Unlimited Access<br>to All Features"].replace(
-    "<br>",
-    " "
+function toggleLinkAdress() {
+  let currentLink = linkAdress.getAttribute("href");
+  linkAdress.setAttribute(
+    "href",
+    `${
+      currentLink === "https://google.com/"
+        ? "https://apple.com/"
+        : "https://google.com/"
+    }`
   );
-  contentUnlim.textContent = obj["Unlimited documents"];
-  contentExport.textContent = obj["Count mode"];
-  contentRecognize.textContent = obj["Text recognition (OCR)"];
-  monthly.textContent = obj["Monthly"];
-  let textM = obj["<strong>{{price}}</strong><br>per month"].replace(
-    "<strong>{{price}}</strong><br>",
-    " "
-  );
-
-  monthlyPrice.innerHTML = `<p id="priceM" class="subscription__price">
-      <span id="m-span" class="subscription__price_span">
-        $${pricePerMonth}
-      </span><br>
-      ${textM}
-    </p>`;
-
-  subscrMonth.textContent = obj["3 DAYS FREE"] + "!";
-  monthPerMonth.textContent = obj["{{price}}/month"].replace(
-    "{{price}}/",
-    `$${pricePerMonth} `
-  );
-
-  annually.textContent = obj["Annually"];
-  discount.textContent = obj["-83%"];
-  annuallyPrice.textContent = obj[
-    "<strong>{{price}}</strong><br>per year"
-  ].replace("<strong>{{price}}</strong><br>", "");
-  let textY = obj["<strong>{{price}}</strong><br>per year"].replace(
-    "<strong>{{price}}</strong><br>",
-    " "
-  );
-  annuallyPrice.innerHTML = `<p id="priceY" class="subscription__price subscription__price_inactive">
-      <span id="y-span" class="subscription__price_span subscription__price_span_inactive">
-        $${pricePerYear}
-      </span><br>
-      ${textY}
-    </p>`;
-  subscrYear.textContent = obj["MOST POPULAR"];
-  yearPerMonth.textContent = obj["{{price}}/month"].replace(
-    "{{price}}/",
-    `$${yearPricePerMonth} `
-  );
-
-  contin.textContent = obj["Continue"];
-  info.textContent = obj["Auto-renewable. Cancel anytime."];
-  term.textContent = obj["Terms of Use"];
-  privacy.textContent = obj["Privacy Policy"];
 }
 
-function toggleSubscriptionYear() {
-  annuallyMarkup.classList.remove("subscription_inactive");
-  annuallyMarkup.classList.add("subscription_active");
-  monthlyMarup.classList.add("subscription_inactive");
-  discount.classList.remove("subscription__discount_inactive");
-  annually.classList.remove("subscription__title_inactive");
-  annuallyPrice.classList.remove("subscription__price_inactive");
-  subscrYear.classList.remove("subscription__free_inactive");
-  yearPerMonth.classList.remove("subscription__per-month_inactive");
-
-  monthly.classList.add("subscription__title_inactive");
-  monthlyPrice.classList.add("subscription__price_inactive");
-  subscrMonth.classList.add("subscription__free_inactive");
-  monthPerMonth.classList.add("subscription__per-month_inactive");
-
-  linkAdress.setAttribute("href", "https://google.com/");
-}
-
-function toggleSubscriptionMonth() {
-  annuallyMarkup.classList.add("subscription_inactive");
-  monthlyMarup.classList.remove("subscription_inactive");
-  monthlyMarup.classList.add("subscription_active");
-  monthly.classList.remove("subscription__title_inactive");
-  monthlyPrice.classList.remove("subscription__price_inactive");
-  subscrMonth.classList.remove("subscription__free_inactive");
-  monthPerMonth.classList.remove("subscription__per-month_inactive");
-
-  discount.classList.add("subscription__discount_inactive");
-  annually.classList.add("subscription__title_inactive");
-  annuallyPrice.classList.add("subscription__price_inactive");
-  subscrYear.classList.add("subscription__free_inactive");
-  yearPerMonth.classList.add("subscription__per-month_inactive");
-  linkAdress.setAttribute("href", "https://apple.com/");
+function toggleSubscriptionStyle(e) {
+  let isInactive = e.currentTarget.classList.contains(
+    "subscription__box_inactive"
+  );
+  if (isInactive) {
+    let arr = getNodeList("[data-toggle]");
+    arr.forEach((element) => {
+      element.classList.toggle(`${element.id}_inactive`);
+      if (element.classList.contains("subscription__price")) {
+        element.childNodes[0].classList.toggle(
+          "subscription__price_span_inactive"
+        );
+      }
+    });
+    toggleLinkAdress();
+  }
 }
 
 (function reduceFont() {
@@ -111,5 +49,46 @@ function toggleSubscriptionMonth() {
   }
 })(window, document);
 
-annuallyMarkup.addEventListener("touchstart", toggleSubscriptionYear);
-monthlyMarup.addEventListener("touchstart", toggleSubscriptionMonth);
+function getNodeList(attr) {
+  return Array.from(document.querySelectorAll(attr));
+}
+
+function getAndFillData(obj) {
+  let arr = getNodeList("[data-string]");
+  arr.forEach((element) => {
+    let tegAttribute = element.dataset.string;
+    let content;
+    if (tegAttribute.includes("3 DAYS")) {
+      content = obj[tegAttribute] + "!";
+    }
+    if (tegAttribute.includes("{{price}}/")) {
+      content = obj[tegAttribute].replace(
+        "{{price}}/",
+        `$${
+          isElementHasAttr(element, "pricePerMonth")
+            ? pricePerMonth
+            : getPricePerMonth(pricePerYear)
+        } `
+      );
+    }
+    if (tegAttribute.includes("<strong>{{price}}")) {
+      content = obj[tegAttribute].replace(
+        "<strong>{{price}}</strong>",
+        `<span id="subscription__price_span" class="subscription__price_span ${
+          !isElementHasAttr(element, "monthPrice") &&
+          "subscription__price_span_inactive"
+        }">$${
+          isElementHasAttr(element, "monthPrice") ? pricePerMonth : pricePerYear
+        }</span> `
+      );
+    }
+    element.innerHTML = content || obj[tegAttribute];
+  });
+}
+
+function isElementHasAttr(el, attr) {
+  return el.hasAttribute(attr);
+}
+
+annuallyMarkup.addEventListener("touchstart", toggleSubscriptionStyle);
+monthlyMarup.addEventListener("touchstart", toggleSubscriptionStyle);

@@ -1,4 +1,5 @@
 .subscription__monthly {
   margin-right: 3.6%;
   background: url("../../../images/shape-1.svg") no-repeat;
+	background-size: contain;
 }

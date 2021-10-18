@@ -7,7 +7,7 @@
 @import "./__free/subscription__free.css";
 @import "./__per-month/subscription__per-month.css";
 @import "./_active/subscription_active.css";
-@import "./_inactive/subscription_inactive.css";
+@import "./__box/_inactive/subscription__box_inactive.css";
 @import "./__discount/_inactive/subscription__discount_inactive.css";
 @import "./__title/_inactive/subscription__title_inactive.css";
 @import "./__price/_inactive/subscription__price_inactive.css";
